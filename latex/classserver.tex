@@ -1,0 +1,170 @@
+\hypertarget{classserver}{}\doxysection{Класс server}
+\label{classserver}\index{server@{server}}
+
+
+Класс управления работой сервера  
+
+
+
+
+{\ttfamily \#include $<$server.\+hpp$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classserver_ae41bcb8b6bc2642857bc000a6643be7f}{server}} (std\+::string file\+\_\+path, int port, std\+::string \mbox{\hyperlink{classserver_a6705b4d5bc59ce5de7a7b7ae652083a0}{local\+\_\+path}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classserver_a4f1fb2606b66000423ec269a93fdb9e7}{start}} (int port, const char $\ast$address)
+\begin{DoxyCompactList}\small\item\em Запуск сервера и привязка порта \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classserver_aa79a83d84fb56f77d09cf4d0f1c8fed4}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Функция ожидания и принятия соединения с клиентом \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classserver_a1f858fee20988595b2d7b87d4f4ebf5f}{authentication}} ()
+\begin{DoxyCompactList}\small\item\em Функция аутентификации пользователя \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classserver_a54b893c321c9ce6cfedc39a9290355da}{operations}} ()
+\begin{DoxyCompactList}\small\item\em Функция обработки векторов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classserver_a6705b4d5bc59ce5de7a7b7ae652083a0}\label{classserver_a6705b4d5bc59ce5de7a7b7ae652083a0}} 
+std\+::string \mbox{\hyperlink{classserver_a6705b4d5bc59ce5de7a7b7ae652083a0}{local\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em Путь к файлу с логом \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classserver_a26919bb28d4065774b3919c313ceee80}\label{classserver_a26919bb28d4065774b3919c313ceee80}} 
+int \mbox{\hyperlink{classserver_a26919bb28d4065774b3919c313ceee80}{sckt}}
+\begin{DoxyCompactList}\small\item\em Сокет \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classserver_a714e24d21363d69d9379a65fbe000c5e}\label{classserver_a714e24d21363d69d9379a65fbe000c5e}} 
+int \mbox{\hyperlink{classserver_a714e24d21363d69d9379a65fbe000c5e}{wrkr}}
+\begin{DoxyCompactList}\small\item\em Действующее соединение с клиентом \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classserver_a6c5f30502176bc7219c4e3d06f730488}\label{classserver_a6c5f30502176bc7219c4e3d06f730488}} 
+int \mbox{\hyperlink{classserver_a6c5f30502176bc7219c4e3d06f730488}{rc}}
+\begin{DoxyCompactList}\small\item\em Ответ от клиента \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classserver_a36f56cd7cdbcca177de02129934d9b3c}\label{classserver_a36f56cd7cdbcca177de02129934d9b3c}} 
+char $\ast$ \mbox{\hyperlink{classserver_a36f56cd7cdbcca177de02129934d9b3c}{buffer}} = new char\mbox{[}4096\mbox{]}
+\begin{DoxyCompactList}\small\item\em Буфер \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classserver_af117c9d1ca3f036dd9ee864bcc11a4df}\label{classserver_af117c9d1ca3f036dd9ee864bcc11a4df}} 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classserver_af117c9d1ca3f036dd9ee864bcc11a4df}{vault}}
+\begin{DoxyCompactList}\small\item\em Данные клиента ID\+:PASS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс управления работой сервера 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classserver_ae41bcb8b6bc2642857bc000a6643be7f}\label{classserver_ae41bcb8b6bc2642857bc000a6643be7f}} 
+\index{server@{server}!server@{server}}
+\index{server@{server}!server@{server}}
+\doxysubsubsection{\texorpdfstring{server()}{server()}}
+{\footnotesize\ttfamily server\+::server (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+path,  }\item[{int}]{port,  }\item[{std\+::string}]{local\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса 
+
+Конструктор класса server.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+\_\+path} & Путь к файлу с ID\+:PASS клиентов \\
+\hline
+{\em port} & Порт для приема соединения \\
+\hline
+{\em local\+\_\+path} & Путь к файлу журнала\\
+\hline
+{\em file\+\_\+path} & -\/ путь к файлу с данными \\
+\hline
+{\em port} & -\/ порт сервера \\
+\hline
+{\em local\+\_\+path} & -\/ путь к локальному файлу \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classserver_a1f858fee20988595b2d7b87d4f4ebf5f}\label{classserver_a1f858fee20988595b2d7b87d4f4ebf5f}} 
+\index{server@{server}!authentication@{authentication}}
+\index{authentication@{authentication}!server@{server}}
+\doxysubsubsection{\texorpdfstring{authentication()}{authentication()}}
+{\footnotesize\ttfamily bool server\+::authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция аутентификации пользователя 
+
+Метод аутентификации клиента
+
+\begin{DoxyReturn}{Возвращает}
+True, если аутентификация удалась, False -\/ если нет
+
+bool -\/ результат аутентификации (true -\/ успешно, false -\/ ошибка) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classserver_aa79a83d84fb56f77d09cf4d0f1c8fed4}\label{classserver_aa79a83d84fb56f77d09cf4d0f1c8fed4}} 
+\index{server@{server}!connect@{connect}}
+\index{connect@{connect}!server@{server}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily int server\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция ожидания и принятия соединения с клиентом 
+
+Метод для соединения с клиентом
+
+\begin{DoxyReturn}{Возвращает}
+wrkr Действующее соединение с клиентом
+
+wrkr -\/ рабочий сокет 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classserver_a54b893c321c9ce6cfedc39a9290355da}\label{classserver_a54b893c321c9ce6cfedc39a9290355da}} 
+\index{server@{server}!operations@{operations}}
+\index{operations@{operations}!server@{server}}
+\doxysubsubsection{\texorpdfstring{operations()}{operations()}}
+{\footnotesize\ttfamily bool server\+::operations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция обработки векторов 
+
+Метод для выполнения операций
+
+\begin{DoxyReturn}{Возвращает}
+True, если обработка удалась, False -\/ если нет
+
+bool -\/ результат выполнения операций (true -\/ успешно, false -\/ ошибка) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classserver_a4f1fb2606b66000423ec269a93fdb9e7}\label{classserver_a4f1fb2606b66000423ec269a93fdb9e7}} 
+\index{server@{server}!start@{start}}
+\index{start@{start}!server@{server}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily int server\+::start (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{const char $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Запуск сервера и привязка порта 
+
+Метод для запуска сервера
+
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & Порт для приема соединения \\
+\hline
+{\em address} & Сетевой адрес для приема соединения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+sckt Сокет
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & -\/ порт сервера \\
+\hline
+{\em address} & -\/ IP-\/адрес сервера \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+sckt -\/ сокет сервера 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{server_8hpp}{server.\+hpp}}\item 
+server.\+cpp\end{DoxyCompactItemize}

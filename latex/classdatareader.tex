@@ -1,0 +1,71 @@
+\hypertarget{classdatareader}{}\doxysection{Класс datareader}
+\label{classdatareader}\index{datareader@{datareader}}
+
+
+Класс для чтения данных из файла и формирования хранилища пользователей  
+
+
+
+
+{\ttfamily \#include $<$datareader.\+hpp$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatareader_afc100814c259cb952b49f52590d6e01f}{datareader}} (const string \&local\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Data\+Reader. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \mbox{\hyperlink{classdatareader_a0a4fa1a08c1d9b66b8f80b654cc1abfe}{get}} (const string \&file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Получает данные из указанного файла и формирует хранилище пользователей \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для чтения данных из файла и формирования хранилища пользователей 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classdatareader_afc100814c259cb952b49f52590d6e01f}\label{classdatareader_afc100814c259cb952b49f52590d6e01f}} 
+\index{datareader@{datareader}!datareader@{datareader}}
+\index{datareader@{datareader}!datareader@{datareader}}
+\doxysubsubsection{\texorpdfstring{datareader()}{datareader()}}
+{\footnotesize\ttfamily datareader\+::datareader (\begin{DoxyParamCaption}\item[{const string \&}]{local\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Data\+Reader. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em local\+\_\+path} & Путь к локальному файлу, который будет использоваться для чтения данных \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classdatareader_a0a4fa1a08c1d9b66b8f80b654cc1abfe}\label{classdatareader_a0a4fa1a08c1d9b66b8f80b654cc1abfe}} 
+\index{datareader@{datareader}!get@{get}}
+\index{get@{get}!datareader@{datareader}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily map$<$ string, string $>$ datareader\+::get (\begin{DoxyParamCaption}\item[{const string \&}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Получает данные из указанного файла и формирует хранилище пользователей 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+\_\+path} & Путь к файлу с данными пользователей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хранилище данных пользователей в виде std\+::map, где ключ -\/ идентификатор, значение -\/ пароль 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classErrorRead}{Error\+Read}}} & Если возникают проблемы при открытии или чтении файла \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{datareader_8hpp}{datareader.\+hpp}}\item 
+datareader.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{ProgramError_8hpp}{}\doxysection{Файл Program\+Error.\+hpp}
+\label{ProgramError_8hpp}\index{ProgramError.hpp@{ProgramError.hpp}}
+
+
+Обработка ошибок, с последующей записью в журнал  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Граф включаемых заголовочных файлов для Program\+Error.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ProgramError_8hpp__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{ProgramError_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classErrorRead}{Error\+Read}}
+\begin{DoxyCompactList}\small\item\em Класс обработки ошибок чтения файла данных пользователей \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classErrorLogin}{Error\+Login}}
+\begin{DoxyCompactList}\small\item\em Класс обработки ошибок записи в журнал \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classErrorAuth}{Error\+Auth}}
+\begin{DoxyCompactList}\small\item\em Класс обработки ошибок аутентификации \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{ProgramError_8hpp_a079bd3169d0465b403d5b03dd495204d}{log\+\_\+entry}} (std\+::string local\+\_\+path, std\+::string what)
+\begin{DoxyCompactList}\small\item\em Функция записи ошибок в журнал \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Обработка ошибок, с последующей записью в журнал 
+
+\begin{DoxyAuthor}{Автор}
+Шатов В.\+С. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+08 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+26.\+12.\+2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+ИБСТ ПГУ 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{ProgramError_8hpp_a079bd3169d0465b403d5b03dd495204d}\label{ProgramError_8hpp_a079bd3169d0465b403d5b03dd495204d}} 
+\index{ProgramError.hpp@{ProgramError.hpp}!log\_entry@{log\_entry}}
+\index{log\_entry@{log\_entry}!ProgramError.hpp@{ProgramError.hpp}}
+\doxysubsubsection{\texorpdfstring{log\_entry()}{log\_entry()}}
+{\footnotesize\ttfamily std\+::string log\+\_\+entry (\begin{DoxyParamCaption}\item[{std\+::string}]{local\+\_\+path,  }\item[{std\+::string}]{what }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция записи ошибок в журнал 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em local\+\_\+path} & -\/ путь к файлу журнала \\
+\hline
+{\em what} & -\/ содержание ошибки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+description\+\_\+string -\/ строка с логом ошибки 
+\end{DoxyReturn}

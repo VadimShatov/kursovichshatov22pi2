@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Документация кода программы курсовой работы: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Документация кода программы курсовой работы
+   &#160;<span id="projectnumber">1.08</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Справка по использованию  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="server_8hpp_source.html">server.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="datareader_8hpp_source.html">datareader.hpp</a>&quot;</code><br />
+<code>#include &lt;cryptopp/hex.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="md5h_8hpp_source.html">md5h.hpp</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;cryptopp/md5.h&gt;</code><br />
+<code>#include &lt;boost/program_options.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title="Справка по использованию" alt="" coords="1224,5,1307,32"/>
+<area shape="rect" title=" " alt="" coords="951,229,1031,256"/>
+<area shape="rect" title=" " alt="" coords="5,229,64,256"/>
+<area shape="rect" href="server_8hpp.html" title="Операции выполняемые сервером" alt="" coords="577,80,668,107"/>
+<area shape="rect" href="datareader_8hpp.html" title="Считывание данных о клиентах" alt="" coords="1069,80,1189,107"/>
+<area shape="rect" title=" " alt="" coords="1326,155,1445,181"/>
+<area shape="rect" href="md5h_8hpp.html" title="Класс обрабатки MD5 Hash." alt="" coords="1303,80,1390,107"/>
+<area shape="rect" title=" " alt="" coords="1469,155,1593,181"/>
+<area shape="rect" title=" " alt="" coords="1466,80,1537,107"/>
+<area shape="rect" title=" " alt="" coords="1560,80,1760,107"/>
+<area shape="rect" title=" " alt="" coords="850,155,915,181"/>
+<area shape="rect" title=" " alt="" coords="72,155,139,181"/>
+<area shape="rect" title=" " alt="" coords="163,155,237,181"/>
+<area shape="rect" title=" " alt="" coords="261,155,357,181"/>
+<area shape="rect" title=" " alt="" coords="382,155,474,181"/>
+<area shape="rect" title=" " alt="" coords="991,155,1041,181"/>
+<area shape="rect" title=" " alt="" coords="498,155,569,181"/>
+<area shape="rect" title=" " alt="" coords="593,155,652,181"/>
+<area shape="rect" title=" " alt="" coords="676,155,743,181"/>
+<area shape="rect" title=" " alt="" coords="767,155,825,181"/>
+<area shape="rect" title=" " alt="" coords="1093,229,1166,256"/>
+<area shape="rect" href="ProgramError_8hpp.html" title="Обработка ошибок, с последующей записью в журнал" alt="" coords="1167,155,1302,181"/>
+<area shape="rect" title=" " alt="" coords="1191,229,1249,256"/>
+<area shape="rect" title=" " alt="" coords="1273,229,1340,256"/>
+<area shape="rect" title=" " alt="" coords="1365,229,1451,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="memItemLeft" align="right" valign="top"><a id="a97ee70a8770dc30d06c744b24eb2fcfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> ()</td></tr>
+<tr class="memdesc:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит справку по использованию аргументов командной строки <br /></td></tr>
+<tr class="separator:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f2228420376f4db7e1274f2b41667c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main</a> (int argc, const char *argv[])</td></tr>
+<tr class="memdesc:ac0f2228420376f4db7e1274f2b41667c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция приложения сервера  <a href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac0f2228420376f4db7e1274f2b41667c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a9bdb6e00661c9b6fe9f5587fc14783f0"><td class="memItemLeft" ><a id="a9bdb6e00661c9b6fe9f5587fc14783f0"></a>
+struct {</td></tr>
+<tr class="memitem:a84af34645b125b9d04887df6d6ed5b33"><td class="memItemLeft" >
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<a class="el" href="main_8cpp.html#a93c7c40d4fc2b2a4e8fea0f75e81e856">p</a> = 33333</td></tr>
+<tr class="memdesc:a84af34645b125b9d04887df6d6ed5b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Порт по умолчанию <br /></td></tr>
+<tr class="separator:a84af34645b125b9d04887df6d6ed5b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9b6ada6db7f84451dca136f0a12797"><td class="memItemLeft" >
+&#160;&#160;&#160;std::string&#160;&#160;&#160;<a class="el" href="main_8cpp.html#a3bb16f4718023e4f2c51eaa04affb6a3">d</a> = &quot;data.txt&quot;</td></tr>
+<tr class="memdesc:afa9b6ada6db7f84451dca136f0a12797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу данных по умолчанию <br /></td></tr>
+<tr class="separator:afa9b6ada6db7f84451dca136f0a12797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc1c3ce3f6367c79d7fc0c13d051316"><td class="memItemLeft" >
+&#160;&#160;&#160;std::string&#160;&#160;&#160;<a class="el" href="main_8cpp.html#acf4f1c7303384817791c3d89293d6dd8">l</a> = &quot;log.txt&quot;</td></tr>
+<tr class="memdesc:a1bc1c3ce3f6367c79d7fc0c13d051316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу журнала по умолчанию <br /></td></tr>
+<tr class="separator:a1bc1c3ce3f6367c79d7fc0c13d051316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdb6e00661c9b6fe9f5587fc14783f0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9bdb6e00661c9b6fe9f5587fc14783f0">parameters</a></td></tr>
+<tr class="memdesc:a9bdb6e00661c9b6fe9f5587fc14783f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения параметров сервера по умолчанию <br /></td></tr>
+<tr class="separator:a9bdb6e00661c9b6fe9f5587fc14783f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Справка по использованию </p>
+<dl class="section author"><dt>Автор</dt><dd>Шатов В.С. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.08 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>26.12.2023 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>ИБСТ ПГУ </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ac0f2228420376f4db7e1274f2b41667c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f2228420376f4db7e1274f2b41667c">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция приложения сервера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Количество аргументов командной строки </td></tr>
+    <tr><td class="paramname">argv</td><td>Массив аргументов командной строки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

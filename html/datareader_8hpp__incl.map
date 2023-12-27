@@ -1,0 +1,11 @@
+<map id="datareader.hpp" name="datareader.hpp">
+<area shape="rect" id="node1" title="Считывание данных о клиентах" alt="" coords="133,5,253,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,85,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="110,155,183,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="339,80,389,107"/>
+<area shape="rect" id="node5" href="$ProgramError_8hpp.html" title="Обработка ошибок, с последующей записью в журнал" alt="" coords="179,80,314,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="411,155,469,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="493,155,552,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="208,155,275,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="299,155,386,181"/>
+</map>

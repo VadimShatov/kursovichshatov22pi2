@@ -1,0 +1,99 @@
+\hypertarget{classmd5h}{}\doxysection{Класс md5h}
+\label{classmd5h}\index{md5h@{md5h}}
+
+
+Класс обрабатки MD5 Hash.  
+
+
+
+
+{\ttfamily \#include $<$md5h.\+hpp$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmd5h_aeeb838bd7f6ddffd068149a6e8bc71c9}{md5h}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classmd5h}{md5h}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmd5h_a0f2f0cfb113594bcd4c1e95a1c34b2f2}{hash}} (const string \&PASS)
+\begin{DoxyCompactList}\small\item\em Получение хэша пароля \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmd5h_a4513fa387f7c42308f48a1f62f22c00d}\label{classmd5h_a4513fa387f7c42308f48a1f62f22c00d}} 
+string \mbox{\hyperlink{classmd5h_a4513fa387f7c42308f48a1f62f22c00d}{salt}}
+\begin{DoxyCompactList}\small\item\em SALT для хеширования \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classmd5h_ad5f6d07f4df8d42b7cd738cf0f2491ab}{generation\+\_\+\+SALT}} ()
+\begin{DoxyCompactList}\small\item\em Генератор SALT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс обрабатки MD5 Hash. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmd5h_aeeb838bd7f6ddffd068149a6e8bc71c9}\label{classmd5h_aeeb838bd7f6ddffd068149a6e8bc71c9}} 
+\index{md5h@{md5h}!md5h@{md5h}}
+\index{md5h@{md5h}!md5h@{md5h}}
+\doxysubsubsection{\texorpdfstring{md5h()}{md5h()}}
+{\footnotesize\ttfamily md5h\+::md5h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classmd5h}{md5h}}. 
+
+Инициализирует соль для использования при генерации хеша. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmd5h_ad5f6d07f4df8d42b7cd738cf0f2491ab}\label{classmd5h_ad5f6d07f4df8d42b7cd738cf0f2491ab}} 
+\index{md5h@{md5h}!generation\_SALT@{generation\_SALT}}
+\index{generation\_SALT@{generation\_SALT}!md5h@{md5h}}
+\doxysubsubsection{\texorpdfstring{generation\_SALT()}{generation\_SALT()}}
+{\footnotesize\ttfamily std\+::string md5h\+::generation\+\_\+\+SALT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Генератор SALT. 
+
+Генерация случайной соли
+
+\begin{DoxyReturn}{Возвращает}
+tmp\+\_\+s SALT
+
+Сгенерированная строка с солью 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmd5h_a0f2f0cfb113594bcd4c1e95a1c34b2f2}\label{classmd5h_a0f2f0cfb113594bcd4c1e95a1c34b2f2}} 
+\index{md5h@{md5h}!hash@{hash}}
+\index{hash@{hash}!md5h@{md5h}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily std\+::string md5h\+::hash (\begin{DoxyParamCaption}\item[{const string \&}]{PASS }\end{DoxyParamCaption})}
+
+
+
+Получение хэша пароля 
+
+Генерация хеша MD5.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em PASS} & -\/ пароль \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+digest -\/ хэш от пароля
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em PASS} & Пароль для хеширования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка с хешем 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{md5h_8hpp}{md5h.\+hpp}}\item 
+\mbox{\hyperlink{md5h_8cpp}{md5h.\+cpp}}\end{DoxyCompactItemize}

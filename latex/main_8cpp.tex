@@ -1,0 +1,88 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Справка по использованию  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}server.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}datareader.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$cryptopp/hex.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}md5h.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/md5.\+h$>$}\newline
+{\ttfamily \#include $<$boost/program\+\_\+options.\+hpp$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}\label{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}} 
+void \mbox{\hyperlink{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
+\begin{DoxyCompactList}\small\item\em Выводит справку по использованию аргументов командной строки \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Главная функция приложения сервера \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a9bdb6e00661c9b6fe9f5587fc14783f0}\label{main_8cpp_a9bdb6e00661c9b6fe9f5587fc14783f0}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{main_8cpp_a93c7c40d4fc2b2a4e8fea0f75e81e856}{p}} = 33333\\
+\>\>{\em Порт по умолчанию }\\
+\>std::string \mbox{\hyperlink{main_8cpp_a3bb16f4718023e4f2c51eaa04affb6a3}{d}} = \char`\"{}data.txt\char`\"{}\\
+\>\>{\em Путь к файлу данных по умолчанию }\\
+\>std::string \mbox{\hyperlink{main_8cpp_acf4f1c7303384817791c3d89293d6dd8}{l}} = \char`\"{}log.txt\char`\"{}\\
+\>\>{\em Путь к файлу журнала по умолчанию }\\
+\} \mbox{\hyperlink{main_8cpp_a9bdb6e00661c9b6fe9f5587fc14783f0}{parameters}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Структура для хранения параметров сервера по умолчанию \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Справка по использованию 
+
+\begin{DoxyAuthor}{Автор}
+Шатов В.\+С. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+08 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+26.\+12.\+2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+ИБСТ ПГУ 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}\label{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Главная функция приложения сервера 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки \\
+\hline
+{\em argv} & Массив аргументов командной строки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код завершения 
+\end{DoxyReturn}
